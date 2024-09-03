@@ -2,11 +2,11 @@
 
 ![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.0-green.svg)
 
-add : /opt/chk-service/bw-chk-service.sh dev to your local .bashrc
+add :
 
-know issues: may cuase problems with rsync
-Solution: Add
-if [ -n "$PS1" ]; then
-    echo "Willkommen auf dem Server!"
+```
+
+if [[ $- == *i* ]]; then
+     /opt/chk-service/bw-chk-service.sh dev
 fi
-to your .bashrc scripts.
+```
